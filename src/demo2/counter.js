@@ -21,6 +21,15 @@ class Counter extends Component {
     })
   }
 
+  componentWillMount() {
+    console.log('will')
+  }
+
+  componentDidMount() {
+    console.log('did')
+  }
+
+  //更新钱
   render() {
     // console.log('go')
     //1组件创建时候render会执行一次 2.当state发生变更的时候，render函数会重新执行 3.当props数据变更的时候，render也会重新执行
