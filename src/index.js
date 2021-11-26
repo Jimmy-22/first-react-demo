@@ -6,6 +6,7 @@ import { Layout } from 'antd'
 import AppHeader from "./components/Header";
 import PageList from "./containers/PageList";
 import Detail from "./containers/Detail";
+import OwnHookDemo from "./demo2/ownHookDemo";
 import './style.css'
 
 const { Header, Content, Footer } = Layout
@@ -20,6 +21,7 @@ class App extends Component {
           </Header>
           <Content className="content">
             <Switch>
+              <Route path='/ownHookDemo' component={OwnHookDemo} />
               <Route path='/detail/:id?' component={Detail} />
               <Route path='/:id?' component={PageList} />
             </Switch>
